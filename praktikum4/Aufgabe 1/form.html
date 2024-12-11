@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Neues Tutorial hinzufügen - Tutorial-App</title>
+    <link rel="stylesheet" type="text/css" href="../../asset/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1><img src="../../asset/img/Tutorial.png" alt="Tutorial-App Logo"  width="60" height="60"> Tutorial-App</h1>
+        <nav>
+
+            <a href="list.html">Kategorien</a> | 
+            <a href="tutorials.html">Tutorials</a> | 
+            <a href="tutorial.html">Detailseite</a> | 
+            <a href="form.html">Neues Tutorial</a>
+
+        </nav>
+    </header>
+    <main>
+        <h2>Neues Tutorial hinzufügen</h2>
+        <form action="https://labs.inf.fh-dortmund.de/tutorialService/testCreateTutorial.php" method="post">
+            <fieldset>
+                <legend>Details zum Tutorial</legend>
+                <label for="name">Titel:</label>
+                <input id="name" type="text" required minlength="4" maxlength="20" pattern="[A-Z].*">
+
+                <label for="language">Sprache:</label>
+                <select name="Sprache" id="language">
+                    <option value="-">-</option>
+                    <option value="de">Deutsch</option>
+                    <option value="en">Englisch</option>
+                    <option value="fr">Französisch</option>
+                    <option value="es">Spanisch</option>
+                </select>
+
+                <label for="categories">Kategorie(n):</label>
+                <input type="text" id="categories" name="categories" required pattern="[^,]+(,[^,]+)*"
+                    placeholder="z.B. Web, Kochen">
+
+                <label for="description">Beschreibung:</label>
+                <textarea id="description" name="description" required minlength="40"
+                    placeholder="Beschreibung"></textarea>
+
+                <label for="duration">Dauer:</label>
+                <input type="text" id="duration" name="duration" required
+                    pattern="^(0?[1-9]|1[0-5]):([0-5][0-9])$|^(00):([2-5][0-9])$" placeholder="MM:SS">
+
+                <label for="date">Veröffentlichungsdatum:</label>
+                <input type="date" id="date" name="date" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Inhalt</legend>
+                <label for="type">Typ:</label>
+                <select id="type" name="type" required>
+                    <option value="text">Text-Tutorial</option>
+                    <option value="video">Video-Tutorial</option>
+                </select>
+
+                <label for="content">Inhalt:</label>
+                <input type="text" id="content" name="content" required placeholder="URL oder Embed-Code">
+            </fieldset>
+
+            <button type="submit">Tutorial hinzufügen</button>
+        </form>
+        </mian>
+        <footer>
+            <p> <small> &copy; 2024 H&M for Software Projects </small></p>
+        </footer>
+</body>
+
+</html>

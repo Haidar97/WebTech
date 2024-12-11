@@ -1,0 +1,45 @@
+h1{ font-style: italic; }
+
+h1{ color: rgb(59, 56, 56);}
+
+h2{ font-family: 'Times New Roman', Times, serif;}
+
+nav, aside {
+    background-color: rgb(198, 192, 159);
+    border-radius: 4px;
+}
+
+a:hover{
+    background-color: rgb(143, 142, 142);
+    color: aliceblue;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+
+table thead{
+    background-color: #718472; /* Farbe für den Kopf */
+    color: white;
+}
+
+
+table tfoot td {
+    background-color: #bade65; /* Farbe für den Fuß */
+    font-weight: bold;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #dedddd; 
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f5b8b8;
+}
