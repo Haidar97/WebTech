@@ -1,0 +1,47 @@
+header {
+    grid-area: kopf;
+}
+
+aside {
+    grid-area: seite;
+}
+
+nav {
+    grid-area: navi;
+    margin: 5px;
+    padding: 5px;
+}
+
+main {
+    grid-area: haupt;
+    margin: 5px;
+}
+
+footer {
+    grid-area: fuss;
+}
+
+#maincontainer {
+    display: grid;
+
+    grid-template-areas: "kopf kopf"
+        "navi navi"
+        "haupt seite"
+        "fuss fuss";
+    grid-template-columns: 80% 20%;
+}
+
+/*Praktikum 7*/
+@media screen and (max-width:768px) {
+
+    #maincontainer{
+        display: grid;
+
+    grid-template-areas: "kopf kopf"
+        "navi navi"
+        "haupt haupt"
+        "seite seite"
+        "fuss fuss";
+    grid-template-columns: 80% 20%;
+    }
+}

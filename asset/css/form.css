@@ -1,0 +1,49 @@
+input:invalid, textarea:invalid {
+    border-bottom: #ff0000;
+}
+
+
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2f8b34;
+}
+
+fieldset {
+    border: 0;
+    border-top: 2px solid #8a8888;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+legend {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #c5b8b8;
+    border-bottom: 2px solid #000000;
+    border-top: 2px solid #000000;
+}
+
+input[type="text"], input[type="date"] {
+    border: 0;
+    border-bottom: 2px solid #ccc;
+}
+
+input[type="text"]:required {
+    border-left: 2px solid #000000;
+}
+
+input[required]::after {
+    content: " (Erforderliches Feld)";
+    font-size: smaller;  
+    color: red;
+  }

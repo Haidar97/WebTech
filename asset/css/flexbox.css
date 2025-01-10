@@ -1,0 +1,53 @@
+#listcontainer{
+    display: flex;
+    flex-direction: row;
+}
+
+
+main{
+    flex: 2;
+    min-width: 75%;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+aside {
+    flex: 1;
+  
+    min-width:25%;
+}
+
+header, nav, main, aside, footer {
+    padding: 1em;
+    margin: 5px;
+  }
+
+#tutorialcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+
+
+#info_logo {
+    display: flex;
+   flex-direction: row;
+}
+
+@media screen and (max-width:768px) {
+
+    #tutorialcontainer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    #listcontainer{
+        display: flex;
+        flex-direction: column;
+    }
+}

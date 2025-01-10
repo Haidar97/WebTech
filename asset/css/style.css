@@ -43,3 +43,69 @@ table tbody tr:nth-child(odd) {
 table tbody tr:nth-child(even) {
     background-color: #f5b8b8;
 }
+
+/*Praktikum 5- Aufagbe 2*/
+/*1*/
+nav a {
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav {
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+/*2*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+footer p{
+  
+    margin: 1px;
+    padding: 1px;
+}
+
+/*3*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Praktikum 5- Aufagbe 3*/
+
+.pictutorials{
+    float: left;
+}
+
+.pictutorial{
+    float: right;
+}
+
+.hauptlogo{
+    float: left;
+}
+
+/*Praktikum 7*/
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        display: none;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+    }
+}

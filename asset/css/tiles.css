@@ -1,0 +1,51 @@
+/* Flexbox for Tile Layout */
+#maincontainer{
+    display: flex;
+    margin-top: 10px;
+
+}
+main{
+    flex: 2 1 80%;
+}
+.tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual Tile Styling */
+.tile {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.tile img {
+    max-width: 80%;
+    height: 80px;
+    margin-bottom: 10px;
+}
+button {
+    background-color: #5f6860;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);;
+    cursor: pointer;
+}
